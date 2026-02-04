@@ -1,0 +1,12 @@
+# This tells Git to never track your .env file (protecting your API key) and other unnecessary files.
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Environment variables
+.env
+
+# Virtual environment (if someone accidentally puts it here)
+venv/

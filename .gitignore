@@ -1,0 +1,29 @@
+New-Item .gitignore
+```
+
+**Now open `.gitignore` in VS Code and paste this:**
+```
+# Python virtual environment
+venv/
+env/
+
+# Environment variables - CRITICAL!
+.env
+backend/.env
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Node modules
+node_modules/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
