@@ -1,5 +1,8 @@
 import React from 'react';
 import ReactMarkdown from 'react-markdown';
+import remarkMath from 'remark-math';
+import rehypeKatex from 'rehype-katex';
+import 'katex/dist/katex.min.css';
 import './ChatMessage.css';
 
 function ChatMessage({ message, isUser }) {
@@ -9,7 +12,12 @@ function ChatMessage({ message, isUser }) {
         {isUser ? (
           message
         ) : (
-          <ReactMarkdown>{message}</ReactMarkdown>
+          <ReactMarkdown
+            remarkPlugins={[remarkMath]}
+            rehypePlugins={[rehypeKatex]}
+          >
+            {message}
+          </ReactMarkdown>
         )}
       </div>
     </div>

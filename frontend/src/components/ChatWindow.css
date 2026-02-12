@@ -1,6 +1,7 @@
 .chat-window {
   flex: 1;
   overflow-y: auto;
+  overflow-x: hidden;
   padding: 20px;
   background: linear-gradient(to bottom, #f0f2f5 0%, #ffffff 100%);
   display: flex;

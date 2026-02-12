@@ -24,6 +24,7 @@
 .message-content {
   font-size: 15px;
   line-height: 1.6;
+  overflow: visible; /* No scrollbars on individual messages */
 }
 
 /* Style markdown in bot messages */
@@ -69,4 +70,15 @@
   border-radius: 8px;
   overflow-x: auto;
   margin: 8px 0;
+}
+
+/* KaTeX (math) styling */
+.bot-message .message-content .katex-display {
+  margin: 16px 0;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.bot-message .message-content .katex {
+  font-size: 1.1em;
 }
